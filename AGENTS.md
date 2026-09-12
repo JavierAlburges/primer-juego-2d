@@ -12,6 +12,7 @@ Este documento proporciona el contexto técnico, convenciones de diseño y regla
 - **Tipo de Juego**: 2D Arcade / Supervivencia (Evadir enemigos generados aleatoriamente)
 - **Resolución Base**: `480x720` (Modo stretch: `canvas_items`)
 - **Renderizador**: `gl_compatibility`
+- **Demo Pública en Web (Itch.io)**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d)
 
 ---
 
@@ -103,5 +104,7 @@ Los agentes deben acatar las siguientes pautas al generar o modificar código:
     godot --headless --export-release "Web" builds/Web/index.html
     ```
   - Produce `index.html`, `index.js`, `index.wasm` e `index.pck`. Requiere ser servido por HTTP/HTTPS debido a políticas de seguridad del navegador para WebAssembly.
+  - **Despliegue en Producción (Itch.io)**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d) (paquete comprimido en `builds/PrimerJuego2D-Web-Itch.zip`).
+
 
 

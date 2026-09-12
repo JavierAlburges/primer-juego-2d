@@ -1,8 +1,13 @@
 # Primer Juego 2D (Dodge the Creeps!) 👾
 
+[![Jugar Demo en Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo%20Online-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white)](https://gearsoftca.itch.io/mi-primer-juego-2d)
+
+🎮 **[¡Juega a la Demo en Línea directamente en el navegador aquí!](https://gearsoftca.itch.io/mi-primer-juego-2d)**
+
 Un videojuego 2D de supervivencia y esquivar enemigos (*creeps*) desarrollado en **Godot Engine 4** utilizando **GDScript**.
 
 Este proyecto está basado en la guía oficial de Godot Engine (*"Your first 2D game"*), optimizado y estructurado para aprendizaje, experimentación y expansión de mecánicas.
+
 
 ---
 
@@ -124,13 +129,13 @@ Los navegadores modernos bloquean archivos WebAssembly si se abren con doble cli
   En la ventana de **Exportar**, puedes hacer clic en el ícono de **Play / Ejecutar en el navegador** situado en la esquina superior derecha para iniciar un servidor local automáticamente.
 
 ### Paso 3: Desplegar en Itch.io (Demo Web Pública)
-1. El paquete listo para subir se encuentra en: `builds/PrimerJuego2D-Web-Itch.zip`.
-2. En [itch.io](https://itch.io), ve a **Dashboard** -> **Create new project**.
-3. En **Kind of project**, selecciona **HTML**.
-4. En la sección **Uploads**, sube el archivo `PrimerJuego2D-Web-Itch.zip` y marca la casilla **"This file will be played in the browser"**.
-5. En **Embed options**:
-   - Tamaño del viewport / Viewport dimensions: `480 x 720` (o activa *Fullscreen button*).
-6. Guarda la página y publica tu demo.
+- **Demo pública activa**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d)
+- Paquete zip de despliegue generado en: `builds/PrimerJuego2D-Web-Itch.zip`.
+- Al actualizar o re-exportar para Itch.io:
+  1. Exportar preset Web en Godot Engine a `builds/Web/index.html`.
+  2. Comprimir el contenido de `builds/Web/` en un archivo `.zip`.
+  3. En [itch.io](https://itch.io), actualizar el archivo en el proyecto seleccionando *"This file will be played in the browser"*.
+
 
 ---
 
