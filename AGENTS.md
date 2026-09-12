@@ -90,17 +90,18 @@ Los agentes deben acatar las siguientes pautas al generar o modificar código:
 - **Modificación de HUD**:
   - Asegurar que cualquier nuevo elemento mantenga el orden de renderizado adecuado dentro del `CanvasLayer`.
 - **Exportación y Generación de Ejecutables (.exe)**:
-  - El proyecto define presets en `export_presets.cfg`. El preset activo de Windows es `"Equiva"` (`platform="Windows Desktop"`, ruta de salida `./PrimerJuego2D.exe`).
+  - El proyecto define presets en `export_presets.cfg`. El preset activo de Windows es `"Equiva"` (`platform="Windows Desktop"`, ruta de salida `./builds/Windows/PrimerJuego2D.exe`).
   - Para generar el ejecutable mediante CLI o integración continua (CI/CD):
     ```bash
-    godot --headless --export-release "Equiva" PrimerJuego2D.exe
+    godot --headless --export-release "Equiva" builds/Windows/PrimerJuego2D.exe
     ```
   - Se generan los archivos vinculados: binario ejecutable (`.exe`) y paquete de recursos (`.pck`). Asegurarse de mantener ambos juntos al distribuir.
 - **Exportación a Web (HTML5 / WebAssembly)**:
-  - Preset activo: `"Web"` (`platform="Web"`).
+  - Preset activo: `"Web"` (`platform="Web"`, ruta de salida `./builds/Web/index.html`).
   - Comando CLI para exportación:
     ```bash
-    godot --headless --export-release "Web" web/index.html
+    godot --headless --export-release "Web" builds/Web/index.html
     ```
   - Produce `index.html`, `index.js`, `index.wasm` e `index.pck`. Requiere ser servido por HTTP/HTTPS debido a políticas de seguridad del navegador para WebAssembly.
+
 

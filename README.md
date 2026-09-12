@@ -74,35 +74,33 @@ El proyecto ya cuenta con el perfil de exportación configurado en `export_prese
 2. Ir al menú superior: **Proyecto** -> **Exportar...** (*Project -> Export...*).
 3. En la ventana de exportación, seleccionar el preset **Equiva** (Windows Desktop).
 4. Hacer clic en **Exportar proyecto...** (*Export Project...*) en la parte inferior.
-5. Seleccionar la ruta de destino (por defecto genera `PrimerJuego2D.exe` y `PrimerJuego2D.pck`).
+  5. Seleccionar la ruta de destino (configurado en `builds/Windows/PrimerJuego2D.exe`).
 6. Marcar o desmarcar *Export With Debug* según se requiera y pulsar **Guardar**.
 
 ### Opción B: Mediante Línea de Comandos (CLI)
 Si tienes el binario de Godot configurado en tu terminal:
 ```bash
 # Exportar versión Release (Producción)
-godot --headless --export-release "Equiva" PrimerJuego2D.exe
+godot --headless --export-release "Equiva" builds/Windows/PrimerJuego2D.exe
 
 # O versión Debug (Con consola de depuración)
-godot --headless --export-debug "Equiva" PrimerJuego2D.exe
+godot --headless --export-debug "Equiva" builds/Windows/PrimerJuego2D.exe
 ```
 
 ---
 
 ## 🌐 Cómo Exportar y Ejecutar en la Web (HTML5 / WebAssembly)
 
-El proyecto cuenta con el preset de exportación **Web** preconfigurado para generar una versión jugable en el navegador.
+El proyecto cuenta con el preset de exportación **Web** preconfigurado para generar una versión jugable en el navegador dentro de `builds/Web/`.
 
 ### Paso 1: Exportar los archivos Web
 - **Desde el Editor**:
   1. Ir a **Proyecto** -> **Exportar...** (*Project -> Export...*).
   2. Seleccionar el preset **Web**.
-  3. Crear una carpeta llamada `web/` en el proyecto.
-  4. Pulsar **Exportar proyecto...**, seleccionar como nombre `index.html` dentro de `web/` y guardar.
+  3. Pulsar **Exportar proyecto...**, seleccionar como destino `builds/Web/index.html` y guardar.
 - **Desde la Terminal (CLI)**:
   ```bash
-  mkdir web
-  godot --headless --export-release "Web" web/index.html
+  godot --headless --export-release "Web" builds/Web/index.html
   ```
   Esto generará los archivos `index.html`, `index.js`, `index.wasm` e `index.pck`.
 
@@ -111,20 +109,31 @@ Los navegadores modernos bloquean archivos WebAssembly si se abren con doble cli
 
 - **Con Python**:
   ```bash
-  cd web
+  cd builds/Web
   python -m http.server 8000
   ```
   Luego abre en tu navegador: [http://localhost:8000](http://localhost:8000)
 
 - **Con Node.js / npx**:
   ```bash
-  npx serve web
+  npx serve builds/Web
+
   ```
 
 - **Desde el mismo Godot**:
   En la ventana de **Exportar**, puedes hacer clic en el ícono de **Play / Ejecutar en el navegador** situado en la esquina superior derecha para iniciar un servidor local automáticamente.
 
+### Paso 3: Desplegar en Itch.io (Demo Web Pública)
+1. El paquete listo para subir se encuentra en: `builds/PrimerJuego2D-Web-Itch.zip`.
+2. En [itch.io](https://itch.io), ve a **Dashboard** -> **Create new project**.
+3. En **Kind of project**, selecciona **HTML**.
+4. En la sección **Uploads**, sube el archivo `PrimerJuego2D-Web-Itch.zip` y marca la casilla **"This file will be played in the browser"**.
+5. En **Embed options**:
+   - Tamaño del viewport / Viewport dimensions: `480 x 720` (o activa *Fullscreen button*).
+6. Guarda la página y publica tu demo.
+
 ---
+
 
 
 ## 🛠️ Tecnologías Utilizadas
