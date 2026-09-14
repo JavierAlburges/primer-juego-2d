@@ -6,13 +6,15 @@ Este documento proporciona el contexto técnico, convenciones de diseño y regla
 
 ## 1. Visión General del Proyecto
 
-- **Nombre del Proyecto**: PrimerJuego2D (Dodge the Creeps)
+- **Nombre del Proyecto**: Abyss Dodge (PrimerJuego2D / Dodge the Creeps)
+- **Desarrollador / Organización**: **GearSoftCA**
 - **Motor / Versión**: Godot Engine 4.x
 - **Lenguaje**: GDScript (Godot 4 syntax)
 - **Tipo de Juego**: 2D Arcade / Supervivencia (Evadir enemigos generados aleatoriamente)
 - **Resolución Base**: `480x720` (Modo stretch: `canvas_items`)
 - **Renderizador**: `gl_compatibility`
-- **Demo Pública en Web (Itch.io)**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d)
+- **Demo Pública en Web (Itch.io)**: [https://gearsoftca.itch.io/abyss-dodge](https://gearsoftca.itch.io/abyss-dodge)
+- **Optimización de Presencia Web**: SEO, GEO y AEO implementados en la plantilla web de exportación (`builds/Web/index.html`).
 
 ---
 
@@ -104,7 +106,12 @@ Los agentes deben acatar las siguientes pautas al generar o modificar código:
     godot --headless --export-release "Web" builds/Web/index.html
     ```
   - Produce `index.html`, `index.js`, `index.wasm` e `index.pck`. Requiere ser servido por HTTP/HTTPS debido a políticas de seguridad del navegador para WebAssembly.
-  - **Despliegue en Producción (Itch.io)**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d) (paquete comprimido en `builds/PrimerJuego2D-Web-Itch.zip`).
+  - **Despliegue en Producción (Itch.io)**: [https://gearsoftca.itch.io/abyss-dodge](https://gearsoftca.itch.io/abyss-dodge) (paquete comprimido en `builds/PrimerJuego2D-Web-Itch.zip`).
+- **Directrices de Visibilidad Web (SEO / GEO / AEO)**:
+  - Al re-exportar o generar nuevos artefactos web, preservar en el `<head>` del HTML:
+    - **SEO**: Meta descripciones, canonical URL a `https://gearsoftca.itch.io/abyss-dodge`, Open Graph y Twitter Cards.
+    - **GEO**: Etiquetas geográficas de autoría y región para GearSoftCA.
+    - **AEO**: Schema.org JSON-LD estructurado de tipo `VideoGame` identificando el juego y a `GearSoftCA` como autor/publisher para modelos LLM y motores semánticos.
 
 
 

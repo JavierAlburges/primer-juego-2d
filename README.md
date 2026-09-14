@@ -1,12 +1,23 @@
-# Primer Juego 2D (Dodge the Creeps!) 👾
+# Abyss Dodge 👾
 
-[![Jugar Demo en Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Demo%20Online-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white)](https://gearsoftca.itch.io/mi-primer-juego-2d)
+<div align="center">
 
-🎮 **[¡Juega a la Demo en Línea directamente en el navegador aquí!](https://gearsoftca.itch.io/mi-primer-juego-2d)**
+![Portada de Abyss Dodge](./portada_itch.jpg)
 
-Un videojuego 2D de supervivencia y esquivar enemigos (*creeps*) desarrollado en **Godot Engine 4** utilizando **GDScript**.
+[![Jugar Demo en Itch.io](https://img.shields.io/badge/Itch.io-Jugar%20Abyss%20Dodge%20Online-fa5c5c?style=for-the-badge&logo=itchdotio&logoColor=white)](https://gearsoftca.itch.io/abyss-dodge)
+[![Desarrollado por GearSoftCA](https://img.shields.io/badge/Desarrollado%20por-GearSoftCA-007acc?style=for-the-badge&logo=godotengine&logoColor=white)](https://gearsoftca.itch.io)
 
-Este proyecto está basado en la guía oficial de Godot Engine (*"Your first 2D game"*), optimizado y estructurado para aprendizaje, experimentación y expansión de mecánicas.
+🎮 **[¡Juega a Abyss Dodge en Línea directamente en el navegador aquí!](https://gearsoftca.itch.io/abyss-dodge)**
+
+*Un proyecto oficial de **GearSoftCA** creado con Godot Engine 4.*
+
+</div>
+
+---
+
+**Abyss Dodge** es un videojuego 2D de supervivencia arcade donde deberás esquivar oleadas de criaturas y peligros del abismo, desarrollado por **GearSoftCA** en **Godot Engine 4** utilizando **GDScript**.
+
+Este proyecto toma como base las mecánicas esenciales de evasión (*"Your first 2D game"*), optimizado y enriquecido con estándares modernos de desarrollo, diseño de interfaces, exportación multiplataforma y visibilidad web (SEO, GEO y AEO).
 
 
 ---
@@ -129,7 +140,7 @@ Los navegadores modernos bloquean archivos WebAssembly si se abren con doble cli
   En la ventana de **Exportar**, puedes hacer clic en el ícono de **Play / Ejecutar en el navegador** situado en la esquina superior derecha para iniciar un servidor local automáticamente.
 
 ### Paso 3: Desplegar en Itch.io (Demo Web Pública)
-- **Demo pública activa**: [https://gearsoftca.itch.io/mi-primer-juego-2d](https://gearsoftca.itch.io/mi-primer-juego-2d)
+- **Demo pública activa**: [https://gearsoftca.itch.io/abyss-dodge](https://gearsoftca.itch.io/abyss-dodge)
 - Paquete zip de despliegue generado en: `builds/PrimerJuego2D-Web-Itch.zip`.
 - Al actualizar o re-exportar para Itch.io:
   1. Exportar preset Web en Godot Engine a `builds/Web/index.html`.
@@ -139,11 +150,27 @@ Los navegadores modernos bloquean archivos WebAssembly si se abren con doble cli
 
 ---
 
+## 🎯 Optimización Web: SEO, GEO y AEO
 
+Para maximizar el alcance del juego tanto en buscadores convencionales como en motores de respuestas basados en Inteligencia Artificial y búsquedas regionales:
+
+- **SEO (Search Engine Optimization)**:
+  - Títulos y meta descripciones enriquecidas con palabras clave relevantes (`Abyss Dodge`, `GearSoftCA`, `Godot Engine 4`, `Juegos Arcade 2D`).
+  - Canonical link configurado hacia `https://gearsoftca.itch.io/abyss-dodge`.
+  - Tarjetas Open Graph y Twitter Cards integradas para previsualizaciones atractivas en redes sociales y mensajería (WhatsApp, Telegram, X).
+- **GEO (Geographic / Local Optimization)**:
+  - Meta etiquetas de geolocalización regional e internacional (`geo.region`, `geo.placename`, `ICBM`) asociando la autoría técnica a **GearSoftCA**.
+- **AEO (Answer Engine Optimization & AI Discoverability)**:
+  - Datos estructurados **Schema.org (JSON-LD)** tipo `VideoGame` embebidos en el HTML del cliente web.
+  - Esto permite que modelos de lenguaje y motores de búsqueda semántica (ChatGPT, Gemini, Perplexity, Bing Copilot) reconozcan de manera unívoca a **Abyss Dodge** como una entidad de videojuego desarrollada por **GearSoftCA**.
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Motor**: [Godot Engine](https://godotengine.org/)
+- **Desarrollador / Estudio**: **GearSoftCA**
+- **Motor**: [Godot Engine](https://godotengine.org/) (Godot 4.x)
 - **Lenguaje**: GDScript
 - **Renderizador**: GL Compatibility (D3D12 en Windows)
 - **Física 2D**: Motor nativo 2D de Godot / RigidBody2D & Area2D
+- **Distribución Web**: HTML5 / WebAssembly en Itch.io
